@@ -9,21 +9,35 @@
 /* Begin PBXBuildFile section */
 		8411C11E28CA57DC0045EB68 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8411C11D28CA57DC0045EB68 /* AppDelegate.swift */; };
 		8411C12028CA57DC0045EB68 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8411C11F28CA57DC0045EB68 /* SceneDelegate.swift */; };
-		8411C12228CA57DC0045EB68 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8411C12128CA57DC0045EB68 /* ViewController.swift */; };
+		8411C12228CA57DC0045EB68 /* PubViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8411C12128CA57DC0045EB68 /* PubViewController.swift */; };
 		8411C12528CA57DC0045EB68 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8411C12328CA57DC0045EB68 /* Main.storyboard */; };
 		8411C12728CA57DE0045EB68 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8411C12628CA57DE0045EB68 /* Assets.xcassets */; };
 		8411C12A28CA57DE0045EB68 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8411C12828CA57DE0045EB68 /* LaunchScreen.storyboard */; };
+		8411C13228CCE8B50045EB68 /* Beer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8411C13128CCE8B50045EB68 /* Beer.swift */; };
+		8411C13428CCEB1F0045EB68 /* PubService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8411C13328CCEB1F0045EB68 /* PubService.swift */; };
+		8411C13628CCF3DF0045EB68 /* InfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8411C13528CCF3DF0045EB68 /* InfoViewController.swift */; };
+		842826EE296F5E68003629DE /* BeerCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 842826EC296F5E68003629DE /* BeerCell.swift */; };
+		842826EF296F5E68003629DE /* BeerCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 842826ED296F5E68003629DE /* BeerCell.xib */; };
+		8464EADD297067DC00A551BB /* PubViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8464EADC297067DC00A551BB /* PubViewModel.swift */; };
+		8464EAE029706FEC00A551BB /* InfoViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8464EADF29706FEC00A551BB /* InfoViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		8411C11A28CA57DC0045EB68 /* lecture5.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = lecture5.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8411C11D28CA57DC0045EB68 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8411C11F28CA57DC0045EB68 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		8411C12128CA57DC0045EB68 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		8411C12128CA57DC0045EB68 /* PubViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PubViewController.swift; sourceTree = "<group>"; };
 		8411C12428CA57DC0045EB68 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		8411C12628CA57DE0045EB68 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8411C12928CA57DE0045EB68 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		8411C12B28CA57DE0045EB68 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8411C13128CCE8B50045EB68 /* Beer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Beer.swift; sourceTree = "<group>"; };
+		8411C13328CCEB1F0045EB68 /* PubService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PubService.swift; sourceTree = "<group>"; };
+		8411C13528CCF3DF0045EB68 /* InfoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoViewController.swift; sourceTree = "<group>"; };
+		842826EC296F5E68003629DE /* BeerCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeerCell.swift; sourceTree = "<group>"; };
+		842826ED296F5E68003629DE /* BeerCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = BeerCell.xib; sourceTree = "<group>"; };
+		8464EADC297067DC00A551BB /* PubViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PubViewModel.swift; sourceTree = "<group>"; };
+		8464EADF29706FEC00A551BB /* InfoViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,15 +70,86 @@
 		8411C11C28CA57DC0045EB68 /* lecture5 */ = {
 			isa = PBXGroup;
 			children = (
-				8411C11D28CA57DC0045EB68 /* AppDelegate.swift */,
-				8411C11F28CA57DC0045EB68 /* SceneDelegate.swift */,
-				8411C12128CA57DC0045EB68 /* ViewController.swift */,
-				8411C12328CA57DC0045EB68 /* Main.storyboard */,
-				8411C12628CA57DE0045EB68 /* Assets.xcassets */,
-				8411C12828CA57DE0045EB68 /* LaunchScreen.storyboard */,
-				8411C12B28CA57DE0045EB68 /* Info.plist */,
+				842826EB296F4E28003629DE /* Service */,
+				842826E9296F4E06003629DE /* Model */,
+				842826E8296F4DFA003629DE /* View */,
+				842826E7296F4DDF003629DE /* Resources */,
+				842826E6296F4DD4003629DE /* Controllers */,
+				842826E5296F4DC6003629DE /* App */,
 			);
 			path = lecture5;
+			sourceTree = "<group>";
+		};
+		842826E5296F4DC6003629DE /* App */ = {
+			isa = PBXGroup;
+			children = (
+				8411C12B28CA57DE0045EB68 /* Info.plist */,
+				8411C11D28CA57DC0045EB68 /* AppDelegate.swift */,
+				8411C11F28CA57DC0045EB68 /* SceneDelegate.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		842826E6296F4DD4003629DE /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				8464EADE29706FD300A551BB /* Info */,
+				8464EADB297067C200A551BB /* Main */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		842826E7296F4DDF003629DE /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				8411C12628CA57DE0045EB68 /* Assets.xcassets */,
+				8411C12828CA57DE0045EB68 /* LaunchScreen.storyboard */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		842826E8296F4DFA003629DE /* View */ = {
+			isa = PBXGroup;
+			children = (
+				8411C12328CA57DC0045EB68 /* Main.storyboard */,
+				842826EC296F5E68003629DE /* BeerCell.swift */,
+				842826ED296F5E68003629DE /* BeerCell.xib */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		842826E9296F4E06003629DE /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				8411C13128CCE8B50045EB68 /* Beer.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		842826EB296F4E28003629DE /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				8411C13328CCEB1F0045EB68 /* PubService.swift */,
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
+		8464EADB297067C200A551BB /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				8411C12128CA57DC0045EB68 /* PubViewController.swift */,
+				8464EADC297067DC00A551BB /* PubViewModel.swift */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		8464EADE29706FD300A551BB /* Info */ = {
+			isa = PBXGroup;
+			children = (
+				8411C13528CCF3DF0045EB68 /* InfoViewController.swift */,
+				8464EADF29706FEC00A551BB /* InfoViewModel.swift */,
+			);
+			path = Info;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -128,6 +213,7 @@
 				8411C12A28CA57DE0045EB68 /* LaunchScreen.storyboard in Resources */,
 				8411C12728CA57DE0045EB68 /* Assets.xcassets in Resources */,
 				8411C12528CA57DC0045EB68 /* Main.storyboard in Resources */,
+				842826EF296F5E68003629DE /* BeerCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -138,9 +224,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8411C12228CA57DC0045EB68 /* ViewController.swift in Sources */,
+				8464EADD297067DC00A551BB /* PubViewModel.swift in Sources */,
+				8411C13428CCEB1F0045EB68 /* PubService.swift in Sources */,
+				8411C12228CA57DC0045EB68 /* PubViewController.swift in Sources */,
+				842826EE296F5E68003629DE /* BeerCell.swift in Sources */,
 				8411C11E28CA57DC0045EB68 /* AppDelegate.swift in Sources */,
+				8464EAE029706FEC00A551BB /* InfoViewModel.swift in Sources */,
 				8411C12028CA57DC0045EB68 /* SceneDelegate.swift in Sources */,
+				8411C13628CCF3DF0045EB68 /* InfoViewController.swift in Sources */,
+				8411C13228CCE8B50045EB68 /* Beer.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -289,7 +381,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = N9D7BC833T;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = lecture5/Info.plist;
+				INFOPLIST_FILE = lecture5/App/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -317,7 +409,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = N9D7BC833T;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = lecture5/Info.plist;
+				INFOPLIST_FILE = lecture5/App/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;

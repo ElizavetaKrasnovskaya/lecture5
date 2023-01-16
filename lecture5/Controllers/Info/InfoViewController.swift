@@ -2,33 +2,47 @@ import UIKit
 import Combine
 
 class InfoViewController: UIViewController {
-
-    var index: Int = -1
+    
+    //TODO replace with id
+    var beer: Beer = Beer(name: "", country: "", cost: 0, volume: 0.0)
     
     private var viewModel = InfoViewModel.shared
     private var bindings = Set<AnyCancellable>()
-    
-    private var beer: Beer = Beer(name: "", country: "", cost: 0, volume: 0.0) {
-        didSet{
-            title = beer.name
-            lblCountry.text = beer.country
+    private var volume = 0.0 {
+        didSet {
             lblVolume.text = String("\(beer.volume) ltr")
-            lblCost.text = String("\(beer.cost)₽")
         }
     }
+    
+    //    private var beer: Beer = Beer(name: "", country: "", cost: 0, volume: 0.0) {
+    //        didSet{
+    //            title = beer.name
+    //            lblCountry.text = beer.country
+    //            lblVolume.text = String("\(beer.volume) ltr")
+    //            lblCost.text = String("\(beer.cost)₽")
+    //        }
+    //    }
+    
     @IBOutlet weak var lblCountry: UILabel!
     @IBOutlet weak var lblVolume: UILabel!
     @IBOutlet weak var lblCost: UILabel!
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        viewModel.getBeer(with: index)
+        initView()
         bindViewModel()
     }
     
+    private func initView() {
+        title = beer.name
+        lblCountry.text = beer.country
+        lblVolume.text = String("\(beer.volume) ltr")
+        lblCost.text = String("\(beer.cost)₽")
+    }
+    
     private func bindViewModel() {
-        viewModel.$beer
-            .assign(to: \.beer, on: self)
+        viewModel.$volume
+            .assign(to: \.volume, on: self)
             .store(in: &bindings)
     }
     
@@ -42,14 +56,14 @@ class InfoViewController: UIViewController {
         default: volume = 0.0
         }
         
-        let price = viewModel.buyBeer(with: index, volume: volume)
-        viewModel.getBeer(with: index)
+        beer.volume -= volume
+        let price = viewModel.buyBeer(with: beer, value: volume)
         
-        showAlert(withPrice: price, index: index)
+        showAlert(withPrice: price)
     }
     
     // TODO add ext for alert
-    private func showAlert(withPrice price: Double, index: Int) {
+    private func showAlert(withPrice price: Double) {
         let currentRemain = beer.volume
         if price == -1 {
             showAlert(withTitle: "Something went wrong...", message: "Not enough beer. Total volume: \(currentRemain) ltr")

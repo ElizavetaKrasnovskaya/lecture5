@@ -18,6 +18,9 @@
 		8411C13628CCF3DF0045EB68 /* InfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8411C13528CCF3DF0045EB68 /* InfoViewController.swift */; };
 		842826EE296F5E68003629DE /* BeerCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 842826EC296F5E68003629DE /* BeerCell.swift */; };
 		842826EF296F5E68003629DE /* BeerCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 842826ED296F5E68003629DE /* BeerCell.xib */; };
+		84313AE22972EE080090F0A0 /* Pub.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 84313AE02972EE080090F0A0 /* Pub.xcdatamodeld */; };
+		84313AE429731DCA0090F0A0 /* DatabaseService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84313AE329731DCA0090F0A0 /* DatabaseService.swift */; };
+		84313AE629731E930090F0A0 /* StorageService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84313AE529731E930090F0A0 /* StorageService.swift */; };
 		8464EADD297067DC00A551BB /* PubViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8464EADC297067DC00A551BB /* PubViewModel.swift */; };
 		8464EAE029706FEC00A551BB /* InfoViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8464EADF29706FEC00A551BB /* InfoViewModel.swift */; };
 /* End PBXBuildFile section */
@@ -36,6 +39,9 @@
 		8411C13528CCF3DF0045EB68 /* InfoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoViewController.swift; sourceTree = "<group>"; };
 		842826EC296F5E68003629DE /* BeerCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeerCell.swift; sourceTree = "<group>"; };
 		842826ED296F5E68003629DE /* BeerCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = BeerCell.xib; sourceTree = "<group>"; };
+		84313AE12972EE080090F0A0 /* Pub.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Pub.xcdatamodel; sourceTree = "<group>"; };
+		84313AE329731DCA0090F0A0 /* DatabaseService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DatabaseService.swift; sourceTree = "<group>"; };
+		84313AE529731E930090F0A0 /* StorageService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StorageService.swift; sourceTree = "<group>"; };
 		8464EADC297067DC00A551BB /* PubViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PubViewModel.swift; sourceTree = "<group>"; };
 		8464EADF29706FEC00A551BB /* InfoViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -70,6 +76,7 @@
 		8411C11C28CA57DC0045EB68 /* lecture5 */ = {
 			isa = PBXGroup;
 			children = (
+				84313AE02972EE080090F0A0 /* Pub.xcdatamodeld */,
 				842826EB296F4E28003629DE /* Service */,
 				842826E9296F4E06003629DE /* Model */,
 				842826E8296F4DFA003629DE /* View */,
@@ -130,6 +137,8 @@
 			isa = PBXGroup;
 			children = (
 				8411C13328CCEB1F0045EB68 /* PubService.swift */,
+				84313AE329731DCA0090F0A0 /* DatabaseService.swift */,
+				84313AE529731E930090F0A0 /* StorageService.swift */,
 			);
 			path = Service;
 			sourceTree = "<group>";
@@ -225,14 +234,17 @@
 			buildActionMask = 2147483647;
 			files = (
 				8464EADD297067DC00A551BB /* PubViewModel.swift in Sources */,
+				84313AE629731E930090F0A0 /* StorageService.swift in Sources */,
 				8411C13428CCEB1F0045EB68 /* PubService.swift in Sources */,
 				8411C12228CA57DC0045EB68 /* PubViewController.swift in Sources */,
+				84313AE22972EE080090F0A0 /* Pub.xcdatamodeld in Sources */,
 				842826EE296F5E68003629DE /* BeerCell.swift in Sources */,
 				8411C11E28CA57DC0045EB68 /* AppDelegate.swift in Sources */,
 				8464EAE029706FEC00A551BB /* InfoViewModel.swift in Sources */,
 				8411C12028CA57DC0045EB68 /* SceneDelegate.swift in Sources */,
 				8411C13628CCF3DF0045EB68 /* InfoViewController.swift in Sources */,
 				8411C13228CCE8B50045EB68 /* Beer.swift in Sources */,
+				84313AE429731DCA0090F0A0 /* DatabaseService.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -450,6 +462,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		84313AE02972EE080090F0A0 /* Pub.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				84313AE12972EE080090F0A0 /* Pub.xcdatamodel */,
+			);
+			currentVersion = 84313AE12972EE080090F0A0 /* Pub.xcdatamodel */;
+			path = Pub.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = 8411C11228CA57DC0045EB68 /* Project object */;
 }

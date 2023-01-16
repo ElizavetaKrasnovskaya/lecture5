@@ -1,5 +1,6 @@
 import UIKit
 import Combine
+import CoreData
 
 class PubViewController: UIViewController {
 
@@ -92,15 +93,15 @@ extension PubViewController: UITableViewDelegate, UITableViewDataSource {
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         let index = indexPath.row
         tableView.deselectRow(at: indexPath, animated: true)
-        navigateToInfo(with: index)
+        navigateToInfo(with: beers[index])
     }
     
-    private func navigateToInfo(with index: Int) {
+    private func navigateToInfo(with beer: Beer) {
         let storyboard = UIStoryboard(name: "Main", bundle: nil)
         
         guard let infoViewController = storyboard.instantiateViewController(withIdentifier: "InfoViewController") as? InfoViewController
         else { return }
-        infoViewController.index = index
+        infoViewController.beer = beer
         navigationController?.pushViewController(infoViewController, animated: true)
     }
 }

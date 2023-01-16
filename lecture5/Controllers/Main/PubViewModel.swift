@@ -1,4 +1,6 @@
 import Foundation
+import CoreData
+import UIKit
 
 final class PubViewModel {
     
@@ -7,24 +9,30 @@ final class PubViewModel {
     @Published var beers = [Beer]()
     @Published var totalSelled = 0.0
     @Published var earnings = 0.0
+        
+    private let pubService = PubService.shared
+    private let databaseService = DatabaseService.shared
     
-    private let service = PubService.shared
-    
+    // TODO mapper
     func getBeers() {
         beers.removeAll()
-        service.beers.forEach {
-            beers.append($0)
+        let beerObjects = databaseService.getBeer()
+        beerObjects.forEach { beer in
+            beers.append(Beer(
+                name: beer.value(forKeyPath: "name") as? String ?? "",
+                country: beer.value(forKeyPath: "country") as? String ?? "",
+                cost: beer.value(forKeyPath: "cost") as? Int ?? 0,
+                volume: beer.value(forKeyPath: "volume") as? Double ?? 0.0))
         }
     }
     
     func getInfo() {
-        totalSelled = service.totalSelled
-        earnings = service.earnings
+        totalSelled = databaseService.getSelled()
+        earnings = databaseService.getEarnings()
     }
     
     func updateForNewDay() {
-        service.totalSelled = 0
-        service.earnings = 0
+        databaseService.updateTotal(earnings: 0.0, selled: 0.0)
         earnings = 0
         totalSelled = 0
     }

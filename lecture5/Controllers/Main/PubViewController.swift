@@ -3,7 +3,7 @@ import Combine
 import CoreData
 
 class PubViewController: UIViewController {
-
+    
     private let CELL_IDENTIFIER = "BEER_CELL"
     private var selectedBeerName: String = ""
     private var viewModel = PubViewModel.shared

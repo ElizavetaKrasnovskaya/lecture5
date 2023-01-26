@@ -6,17 +6,16 @@ final class InfoViewModel {
     
     @Published var volume = 0.0
     
-    private let service = PubService.shared
     private let databaseService = DatabaseService.shared
     
     func buyBeer(with beer: Beer, value: Double) -> Double {
         var beerToUpdate = beer
         if (beerToUpdate.volume < value) { return -1 }
-                
+        
         beerToUpdate.volume -= value
         beerToUpdate.volume = round(beerToUpdate.volume)
         volume = beerToUpdate.volume
-
+        
         databaseService.updateBeer(beer: beerToUpdate)
         
         let price = value * Double(beerToUpdate.cost)

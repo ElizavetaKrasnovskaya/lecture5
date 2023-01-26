@@ -9,8 +9,7 @@ final class PubViewModel {
     @Published var beers = [Beer]()
     @Published var totalSelled = 0.0
     @Published var earnings = 0.0
-        
-    private let pubService = PubService.shared
+    
     private let databaseService = DatabaseService.shared
     
     // TODO mapper

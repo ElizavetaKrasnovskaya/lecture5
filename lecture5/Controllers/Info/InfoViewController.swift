@@ -14,15 +14,6 @@ class InfoViewController: UIViewController {
         }
     }
     
-    //    private var beer: Beer = Beer(name: "", country: "", cost: 0, volume: 0.0) {
-    //        didSet{
-    //            title = beer.name
-    //            lblCountry.text = beer.country
-    //            lblVolume.text = String("\(beer.volume) ltr")
-    //            lblCost.text = String("\(beer.cost)₽")
-    //        }
-    //    }
-    
     @IBOutlet weak var lblCountry: UILabel!
     @IBOutlet weak var lblVolume: UILabel!
     @IBOutlet weak var lblCost: UILabel!

@@ -78,8 +78,8 @@
             filePath = "lecture5/Controllers/Main/PubViewModel.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "30"
-            endingLineNumber = "30"
+            startingLineNumber = "29"
+            endingLineNumber = "29"
             landmarkName = "getInfo()"
             landmarkType = "7">
          </BreakpointContent>
@@ -362,8 +362,8 @@
             filePath = "lecture5/Controllers/Info/InfoViewModel.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "26"
-            endingLineNumber = "26"
+            startingLineNumber = "25"
+            endingLineNumber = "25"
             landmarkName = "buyBeer(with:value:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -378,8 +378,8 @@
             filePath = "lecture5/Controllers/Info/InfoViewModel.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "13"
-            endingLineNumber = "13"
+            startingLineNumber = "12"
+            endingLineNumber = "12"
             landmarkName = "buyBeer(with:value:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -388,6 +388,22 @@
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
             uuid = "CE2F5783-F9B9-4227-8D08-12C3D1B81BFD"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "lecture5/Controllers/Info/InfoViewModel.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "16"
+            endingLineNumber = "16"
+            landmarkName = "buyBeer(with:value:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "8A64C250-8C54-45A5-BE16-E383CCCCA973"
             shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
@@ -403,22 +419,6 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "8A64C250-8C54-45A5-BE16-E383CCCCA973"
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "lecture5/Controllers/Info/InfoViewModel.swift"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "18"
-            endingLineNumber = "18"
-            landmarkName = "buyBeer(with:value:)"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
             uuid = "BE71BD14-A548-4445-A8E5-54C51E1BD087"
             shouldBeEnabled = "No"
             ignoreCount = "0"
@@ -426,8 +426,8 @@
             filePath = "lecture5/Controllers/Info/InfoViewModel.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "24"
-            endingLineNumber = "24"
+            startingLineNumber = "23"
+            endingLineNumber = "23"
             landmarkName = "buyBeer(with:value:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -462,6 +462,118 @@
             endingLineNumber = "13"
             landmarkName = "volume"
             landmarkType = "24">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "E19E1102-CBA0-4626-8DE4-04479BA43E75"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "test/InfoViewModelTest.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "28"
+            endingLineNumber = "28"
+            landmarkName = "testBuyBeerWithSuccess()"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "E19E1102-CBA0-4626-8DE4-04479BA43E75 - 6062303fedad6dff"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "InfoViewModelTest.InfoViewModelTest.testBuyBeerWithSuccess() throws -&gt; ()"
+                  moduleName = "InfoViewModelTest"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/admin/IosProjects/lecture5/test/InfoViewModelTest.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "23"
+                  endingLineNumber = "23"
+                  offsetFromSymbolStart = "224">
+               </Location>
+               <Location
+                  uuid = "E19E1102-CBA0-4626-8DE4-04479BA43E75 - 6062303fedad6d1a"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "InfoViewModelTest.InfoViewModelTest.testBuyBeerWithSuccess() throws -&gt; ()"
+                  moduleName = "InfoViewModelTest"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/admin/IosProjects/lecture5/test/InfoViewModelTest.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "28"
+                  endingLineNumber = "28"
+                  offsetFromSymbolStart = "236">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "5DFDED39-6323-4D39-90FA-A50A4DBA1464"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "test/InfoViewModelTest.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "30"
+            endingLineNumber = "30"
+            landmarkName = "testBuyBeerWithSuccess()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "2DAF4349-3793-4027-A89B-D6A9E68780EB"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "test/InfoViewModelTest.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "29"
+            endingLineNumber = "29"
+            landmarkName = "testBuyBeerWithSuccess()"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "2DAF4349-3793-4027-A89B-D6A9E68780EB - 6062303fedad6cc5"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "InfoViewModelTest.InfoViewModelTest.testBuyBeerWithSuccess() throws -&gt; ()"
+                  moduleName = "InfoViewModelTest"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/admin/IosProjects/lecture5/test/InfoViewModelTest.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "29"
+                  endingLineNumber = "29"
+                  offsetFromSymbolStart = "496">
+               </Location>
+               <Location
+                  uuid = "2DAF4349-3793-4027-A89B-D6A9E68780EB - 6062303fedad6cc5"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "InfoViewModelTest.InfoViewModelTest.testBuyBeerWithSuccess() throws -&gt; ()"
+                  moduleName = "InfoViewModelTest"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/admin/IosProjects/lecture5/test/InfoViewModelTest.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "29"
+                  endingLineNumber = "29"
+                  offsetFromSymbolStart = "1176">
+               </Location>
+            </Locations>
          </BreakpointContent>
       </BreakpointProxy>
    </Breakpoints>
